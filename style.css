@@ -9,13 +9,26 @@ a {
   cursor: pointer;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 18px;
   background-color: hsl(185, 75%, 39%);
-  position: relative;
-  z-index: 5;
-  background-color: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-position: top -350px left -50px, bottom -380px right -67px;
+  background-size: 50% 100%, 51% 100%;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 100vh;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-position: top -100px left -200px, bottom 0px right -200px;
+    background-size: 100% 50%, 100% 50%;
+  }
 }
 
 main {
