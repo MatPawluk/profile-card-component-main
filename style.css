@@ -98,6 +98,9 @@ main .card__numbers {
   padding: 20px;
   text-align: center;
 }
+main .card__numbers-content h2 {
+  font-size: 18px;
+}
 main .card__numbers-content p {
   font-size: 14px;
   font-weight: 300;
